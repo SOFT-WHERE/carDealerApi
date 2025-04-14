@@ -14,8 +14,8 @@ public class CarDealerApplication {
 		ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("ApplicationContext.xml");
 		Scanner sc=new Scanner(System.in);
 		
-
-		System.out.println("choose your car:\n1 family car \n2 sports car \n3 cybertruck car");
+		while(1!=0){
+			System.out.println("choose your car:\n1 family car \n2 sports car \n3 cybertruck car");
 		int choose=sc.nextInt();
 		String beanId="";
 
@@ -35,6 +35,8 @@ public class CarDealerApplication {
 
 		Car car=(Car) context.getBean(beanId);
 		car.showDetails();
+		}
+		
 
 	}
 
