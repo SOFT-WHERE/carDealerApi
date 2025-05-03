@@ -1,5 +1,8 @@
 package com.carDealer;
 
+import org.springframework.stereotype.Component;
+
+@Component("family")
 public class Family implements Car{
 
     @Override
